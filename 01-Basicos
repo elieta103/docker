@@ -1,0 +1,11 @@
+Habilitar docker al inicio del sistema
+	- sudo systemctl start docker
+	- sudo systemctl enable docker
+	
+Crear/Borrar un Apache
+	- docker run -d -p 80:80 --name web httpd
+	- docker rm -fv web
+
+Crear/Borrar un NGINX
+	- docker run -d -p 81:80 --name web nginx
+	- docker rm -fv web
